@@ -1,0 +1,22 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/uvr-core",
+    "crates/uvr-audio",
+    "crates/uvr-kernels",
+    "crates/uvr-models",
+    "crates/uvr-runtime",
+    "crates/uvr-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[workspace.dependencies]
+uvr-core = { path = "crates/uvr-core" }
+uvr-audio = { path = "crates/uvr-audio" }
+uvr-kernels = { path = "crates/uvr-kernels" }
+uvr-models = { path = "crates/uvr-models" }
+uvr-runtime = { path = "crates/uvr-runtime" }

@@ -1,0 +1,7 @@
+# Large local model checkpoints
+/models/
+
+# Cloned upstream repositories used only as references/benchmarks
+/references/
+# Local benchmark outputs (keep curated summaries separately if desired)
+/benches/results/

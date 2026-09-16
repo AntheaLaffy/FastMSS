@@ -1,0 +1,12 @@
+[package]
+name = "uvr-runtime"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[dependencies]
+uvr-core.workspace = true
+uvr-audio.workspace = true
+uvr-kernels.workspace = true
+uvr-models.workspace = true
