@@ -1,0 +1,144 @@
+# FastMSS external reference manifest
+#
+# Local source trees are intentionally excluded from Git.
+# This file records what they are, why they matter, and which revision
+# was inspected locally.
+#
+# Re-run scripts/setup_references_index.sh after updating local reference
+# repositories to refresh the recorded commit SHAs.
+
+[[reference]]
+name = "ggml"
+category = "baseline"
+path = "references/baselines/ggml"
+url = "https://github.com/ggml-org/ggml.git"
+commit = "456172ec733a135778adcd32d00e576a58232e45"
+purpose = "C/C++ inference and kernel performance reference, especially GEMM and transformer primitives"
+
+[[reference]]
+name = "OpenVINO"
+category = "baseline"
+path = "references/baselines/openvino"
+url = "https://github.com/openvinotoolkit/openvino.git"
+commit = "68ee400390626fa387891c5af9c5144f9ded7a81"
+purpose = "Primary Intel CPU/iGPU end-to-end performance baseline"
+
+[[reference]]
+name = "BS-RoFormer"
+category = "inference"
+path = "references/inference/bs-roformer"
+url = "https://github.com/lucidrains/BS-RoFormer.git"
+commit = "84f2b25297424e93f721d5fb9d42291c6d934284"
+purpose = "Clean BS-RoFormer and Mel-Band RoFormer implementation reference"
+
+[[reference]]
+name = "Music-Source-Separation-Training"
+category = "inference"
+path = "references/inference/msst"
+url = "https://github.com/ZFTurbo/Music-Source-Separation-Training.git"
+commit = "050cae7345f4ac1e1e27e066c2c5cdc0a2cdb679"
+purpose = "Mature checkpoint-compatible implementation for BS-RoFormer, Mel-Band RoFormer and SCNet variants"
+
+[[reference]]
+name = "SCNet"
+category = "inference"
+path = "references/inference/scnet"
+url = "https://github.com/starrytong/SCNet.git"
+commit = "5d95bf96b19c3eede63248d171efeca8e3abb948"
+purpose = "Official/reference implementation of SCNet"
+
+[[reference]]
+name = "Ultimate Vocal Remover GUI"
+category = "inference"
+path = "references/inference/ultimatevocalremovergui"
+url = "https://github.com/Anjok07/ultimatevocalremovergui.git"
+commit = "5517e0cf0d1acd16a1618eeedec596957523f9e1"
+purpose = "Production reference for UVR VR Architecture v5 inference and checkpoint behavior"
+
+[[reference]]
+name = "vocal-remover"
+category = "inference"
+path = "references/inference/vocal-remover-original"
+url = "https://github.com/tsurumeso/vocal-remover.git"
+commit = "ebcfbbb57588517f846153a9c387b4e194c9b531"
+purpose = "Original VR Architecture implementation"
+
+[[reference]]
+name = "stdarch"
+category = "isa"
+path = "references/isa/stdarch"
+url = "https://github.com/rust-lang/stdarch.git"
+commit = "899814bf407111631eafd0491cb91149b3941d35"
+purpose = "Rust architecture intrinsics reference, especially x86_64 SIMD"
+
+[[reference]]
+name = "Intel XED"
+category = "isa"
+path = "references/isa/xed"
+url = "https://github.com/intelxed/xed.git"
+commit = "0bcb6237345c5066726dcc08b3d87928df3b5b26"
+purpose = "Intel x86/x86-64 instruction encoding and ISA reference"
+
+[[reference]]
+name = "oneDNN"
+category = "kernel"
+path = "references/kernels/oneDNN"
+url = "https://github.com/uxlfoundation/oneDNN.git"
+commit = "14e1aa9fd9d805b2df446600675d379495743047"
+purpose = "Industrial CPU and Intel GPU kernel reference for convolution, GEMM and related primitives"
+
+[[reference]]
+name = "CubeCL"
+category = "runtime"
+path = "references/runtimes/cubecl"
+url = "https://github.com/tracel-ai/cubecl.git"
+commit = "707610b61bb0a79747d2983fec7dca8009fd7211"
+purpose = "Primary FastMSS GPU compute/runtime candidate"
+
+[[reference]]
+name = "DirectML"
+category = "runtime"
+path = "references/runtimes/DirectML"
+url = "https://github.com/microsoft/DirectML.git"
+commit = "8700779fe7a09ea7a007cf3d7ab4293c78e41017"
+purpose = "Windows GPU fallback and runtime reference"
+
+[[reference]]
+name = "ort"
+category = "runtime"
+path = "references/runtimes/ort"
+url = "https://github.com/pykeio/ort.git"
+commit = "85bdfa5642cfdbafc925def9868db2ca03ca5329"
+purpose = "Rust ONNX Runtime binding and possible fallback execution path"
+
+[[reference]]
+name = "tch-rs"
+category = "runtime"
+path = "references/runtimes/tch-rs"
+url = "https://github.com/LaurentMazare/tch-rs.git"
+commit = "4227b89b72059b0651ff83a38637693574e0a2d6"
+purpose = "Rust LibTorch binding and general inference/correctness baseline"
+
+[[paper]]
+name = "Music Source Separation with Band-Split RoPE Transformer"
+architecture = "BS-RoFormer"
+url = "https://arxiv.org/abs/2309.02612"
+local_path = "references/papers/bs-roformer/paper"
+
+[[paper]]
+name = "Mel-Band RoFormer for Music Source Separation"
+architecture = "Mel-Band RoFormer"
+url = "https://arxiv.org/abs/2310.01809"
+local_path = "references/papers/mel-band-roformer/paper.pdf"
+
+[[paper]]
+name = "SCNet: Sparse Compression Network for Music Source Separation"
+architecture = "SCNet"
+url = "https://arxiv.org/abs/2401.13276"
+local_path = "references/papers/scnet/paper.pdf"
+
+[[paper]]
+name = "VR Architecture"
+architecture = "VR Architecture"
+url = "https://github.com/tsurumeso/vocal-remover"
+note = "No formal paper identified; the original implementation is the primary algorithm reference."

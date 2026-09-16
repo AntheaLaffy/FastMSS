@@ -2,8 +2,81 @@
 /models/
 
 # Cloned upstream repositories used only as references/benchmarks
-/references/
 # Local benchmark outputs (keep curated summaries separately if desired)
 /benches/results/
 
 /target
+
+# FastMSS local reference checkouts
+/references/baselines/ggml/
+/references/baselines/openvino/
+
+/references/inference/bs-roformer/
+/references/inference/msst/
+/references/inference/scnet/
+/references/inference/ultimatevocalremovergui/
+/references/inference/vocal-remover-original/
+
+/references/isa/stdarch/
+/references/isa/xed/
+
+/references/kernels/oneDNN/
+
+/references/runtimes/cubecl/
+/references/runtimes/DirectML/
+/references/runtimes/ort/
+/references/runtimes/tch-rs/
+
+# Locally stored papers
+/references/papers/**/*.pdf
+/references/papers/**/paper
+
+# FastMSS local reference checkouts
+/references/baselines/ggml/
+/references/baselines/openvino/
+
+/references/inference/bs-roformer/
+/references/inference/msst/
+/references/inference/scnet/
+/references/inference/ultimatevocalremovergui/
+/references/inference/vocal-remover-original/
+
+/references/isa/stdarch/
+/references/isa/xed/
+
+/references/kernels/oneDNN/
+
+/references/runtimes/cubecl/
+/references/runtimes/DirectML/
+/references/runtimes/ort/
+/references/runtimes/tch-rs/
+
+# Locally stored papers
+/references/papers/**/*.pdf
+/references/papers/**/paper
+
+# >>> FastMSS local references >>>
+# Local source checkouts are research material, not vendored dependencies.
+/references/baselines/ggml/
+/references/baselines/openvino/
+
+/references/inference/bs-roformer/
+/references/inference/msst/
+/references/inference/scnet/
+/references/inference/ultimatevocalremovergui/
+/references/inference/vocal-remover-original/
+
+/references/isa/stdarch/
+/references/isa/xed/
+
+/references/kernels/oneDNN/
+
+/references/runtimes/cubecl/
+/references/runtimes/DirectML/
+/references/runtimes/ort/
+/references/runtimes/tch-rs/
+
+# Local copies of papers.
+/references/papers/**/*.pdf
+/references/papers/**/paper
+# <<< FastMSS local references <<<
