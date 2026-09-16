@@ -1,5 +1,4 @@
 # Large local model checkpoints
-/models/
 
 # Cloned upstream repositories used only as references/benchmarks
 # Local benchmark outputs (keep curated summaries separately if desired)
@@ -80,3 +79,23 @@
 /references/papers/**/*.pdf
 /references/papers/**/paper
 # <<< FastMSS local references <<<
+
+# Model weights are local assets.
+# Keep model configs/manifests in Git, but never commit large checkpoints.
+/models/**/*.ckpt
+/models/**/*.pth
+/models/**/*.pt
+/models/**/*.safetensors
+/models/**/*.onnx
+
+# Generated benchmark output
+/benches/results/*
+!/benches/results/.gitkeep
+
+# Preserve reference category documentation
+!/references/baselines/README.md
+!/references/inference/README.md
+!/references/isa/README.md
+!/references/kernels/README.md
+!/references/papers/README.md
+!/references/runtimes/README.md
