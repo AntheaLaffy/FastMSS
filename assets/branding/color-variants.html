@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FastMSS · Logo 配色方案</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, "Noto Sans CJK SC", "Microsoft YaHei", system-ui, sans-serif; color: #172334; background: #eef1f5; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { max-width: 1100px; margin: 0 auto; padding: 46px 28px 32px; }
+    header { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 28px; }
+    .eyebrow { margin: 0 0 9px; color: #5e6b7d; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; }
+    h1 { margin: 0; font-size: clamp(25px, 4vw, 34px); letter-spacing: -0.04em; line-height: 1.2; }
+    header p:last-child { margin: 12px 0 0; color: #607084; font-size: 14px; }
+    a { color: #1e40af; font-size: 13px; font-weight: 600; text-underline-offset: 4px; white-space: nowrap; }
+    a:focus-visible { outline: 3px solid #2563eb; outline-offset: 5px; border-radius: 2px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
+    .card { overflow: hidden; border: 1px solid #dce2ea; border-radius: 16px; background: white; }
+    .stage { height: 328px; display: grid; place-items: center; border-bottom: 1px solid #e6eaf0; padding: 12px; }
+    .stage img { display: block; width: 304px; max-width: 100%; height: 100%; object-fit: contain; }
+    .details { padding: 21px 22px 18px; }
+    .title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    h2 { margin: 0; font-size: 17px; letter-spacing: -0.03em; }
+    .number { color: #77859a; font-size: 12px; margin-right: 11px; font-variant-numeric: tabular-nums; }
+    .details p { color: #64748b; font-size: 13px; margin: 12px 0 18px; line-height: 1.6; }
+    .swatches { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 12px; padding: 0; margin: 0; }
+    .swatches li { display: flex; align-items: center; gap: 7px; font-size: 11px; color: #526175; }
+    .swatch { flex: 0 0 16px; height: 16px; border: 1px solid #00000015; border-radius: 50%; }
+    code { font-family: "SFMono-Regular", Consolas, monospace; font-size: 11px; }
+    .details .background-note { margin: 15px 0 0; font-size: 11px; color: #7b8797; }
+    footer { display: flex; justify-content: space-between; gap: 16px; padding-top: 24px; color: #758295; font-size: 12px; line-height: 1.7; }
+    footer p { margin: 0; }
+    @media (max-width: 690px) {
+      main { padding: 28px 16px; }
+      header { align-items: flex-start; flex-direction: column; gap: 16px; }
+      .grid { grid-template-columns: 1fr; gap: 18px; }
+      .stage { height: 300px; }
+      footer { flex-direction: column; }
+    }
+    @media print {
+      :root { background: white; }
+      main { padding: 0; }
+      .card { break-inside: avoid; }
+      .stage { print-color-adjust: exact; -webkit-print-color-adjust: exact; height: 240px; }
+      a[download] { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div><p class="eyebrow">FASTMSS / COLOR STUDIES</p><h1>同一标志，四种视觉场景。</h1><p>保留音轨分离的设计语言，用色彩适配界面、宣传与单色输出。</p></div>
+      <a href="fastmss-logo.png">查看原始配色 ↗</a>
+    </header>
+    <div class="grid">
+      <article class="card">
+        <div class="stage" style="background:#F8FAFC">
+          <img src="fastmss-logo-light.png" alt="FastMSS 冷蓝 · 浅色界面配色 Logo" width="1254" height="1254">
+        </div>
+        <div class="details">
+          <div class="title-row"><h2><span class="number">01</span>冷蓝 · 浅色界面</h2><a href="fastmss-logo-light.png" download>下载 PNG <span aria-hidden="true">↗</span></a></div>
+          <p>官网、README、浅色应用界面</p>
+          <ul class="swatches" aria-label="目标配色">
+            <li><span class="swatch" style="background:#2563EB"></span><span>上轨 <code>#2563EB</code></span></li>
+            <li><span class="swatch" style="background:#0891B2"></span><span>中轨 <code>#0891B2</code></span></li>
+            <li><span class="swatch" style="background:#4F46E5"></span><span>下轨 <code>#4F46E5</code></span></li>
+            <li><span class="swatch" style="background:#0F172A"></span><span>字标 <code>#0F172A</code></span></li>
+          </ul>
+          <p class="background-note">建议背景 <code>#F8FAFC</code></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="stage" style="background:#0B1220">
+          <img src="fastmss-logo-dark.png" alt="FastMSS 亮青 · 深色界面配色 Logo" width="1254" height="1254">
+        </div>
+        <div class="details">
+          <div class="title-row"><h2><span class="number">02</span>亮青 · 深色界面</h2><a href="fastmss-logo-dark.png" download>下载 PNG <span aria-hidden="true">↗</span></a></div>
+          <p>深色应用、启动画面、暗色演示文稿</p>
+          <ul class="swatches" aria-label="目标配色">
+            <li><span class="swatch" style="background:#60A5FA"></span><span>上轨 <code>#60A5FA</code></span></li>
+            <li><span class="swatch" style="background:#2DD4BF"></span><span>中轨 <code>#2DD4BF</code></span></li>
+            <li><span class="swatch" style="background:#C4B5FD"></span><span>下轨 <code>#C4B5FD</code></span></li>
+            <li><span class="swatch" style="background:#F8FAFC"></span><span>字标 <code>#F8FAFC</code></span></li>
+          </ul>
+          <p class="background-note">建议背景 <code>#0B1220</code></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="stage" style="background:#FFFBF5">
+          <img src="fastmss-logo-warm.png" alt="FastMSS 橙红 · 宣传场景配色 Logo" width="1254" height="1254">
+        </div>
+        <div class="details">
+          <div class="title-row"><h2><span class="number">03</span>橙红 · 宣传场景</h2><a href="fastmss-logo-warm.png" download>下载 PNG <span aria-hidden="true">↗</span></a></div>
+          <p>发布海报、活动页面、社交媒体配图</p>
+          <ul class="swatches" aria-label="目标配色">
+            <li><span class="swatch" style="background:#EA580C"></span><span>上轨 <code>#EA580C</code></span></li>
+            <li><span class="swatch" style="background:#F59E0B"></span><span>中轨 <code>#F59E0B</code></span></li>
+            <li><span class="swatch" style="background:#E11D48"></span><span>下轨 <code>#E11D48</code></span></li>
+            <li><span class="swatch" style="background:#292524"></span><span>字标 <code>#292524</code></span></li>
+          </ul>
+          <p class="background-note">建议背景 <code>#FFFBF5</code></p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="stage" style="background:#FFFFFF">
+          <img src="fastmss-logo-mono.png" alt="FastMSS 纯黑 · 单色输出配色 Logo" width="1254" height="1254">
+        </div>
+        <div class="details">
+          <div class="title-row"><h2><span class="number">04</span>纯黑 · 单色输出</h2><a href="fastmss-logo-mono.png" download>下载 PNG <span aria-hidden="true">↗</span></a></div>
+          <p>单色印刷、文档、水印与刻印参考</p>
+          <ul class="swatches" aria-label="目标配色">
+            <li><span class="swatch" style="background:#000000"></span><span>上轨 <code>#000000</code></span></li>
+            <li><span class="swatch" style="background:#000000"></span><span>中轨 <code>#000000</code></span></li>
+            <li><span class="swatch" style="background:#000000"></span><span>下轨 <code>#000000</code></span></li>
+            <li><span class="swatch" style="background:#000000"></span><span>字标 <code>#000000</code></span></li>
+          </ul>
+          <p class="background-note">建议背景 <code>#FFFFFF</code></p>
+        </div>
+      </article>
+    </div>
+    <footer><p>冷蓝、橙红、纯黑为透明底 PNG；亮青为深蓝底展示稿。<br>色值为配色目标，生成图像的像素可能存在轻微偏差。</p><p><a href="color-variants-prompts.md">查看生成提示词 ↗</a></p></footer>
+  </main>
+</body>
+</html>

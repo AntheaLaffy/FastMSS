@@ -1,0 +1,8 @@
+Use case: logo-brand
+Asset type: primary project logo for FastMSS, a specialized high-performance music source separation inference runtime.
+Primary request: Design an original, polished, minimal logo that unifies audio stem separation and computational speed. A single coherent geometric symbol: a compact forward-moving F-like monogram made of a few bold audio ribbons, with clean negative-space channels suggesting a mixed sound separating into distinct tracks. It should feel like an expertly designed identity for precise audio engineering.
+Style/medium: crisp flat vector-like graphic, restrained, mathematically balanced, distinctive strong silhouette; bold enough to remain recognizable when the symbol is reduced to a small icon. Use a restrained cohesive treatment appropriate for an audio engineering tool.
+Composition/framing: one centered logo lockup with the symbol above a carefully typeset wordmark, generous clear margins, square canvas. Make the symbol the visual focus. Render the mark and wordmark only, as an actual usable logo asset.
+Text (verbatim): "FastMSS" — exactly this spelling and capitalization, F a s t M S S. A confident clean contemporary sans-serif wordmark with careful optical spacing. No other text.
+Scene/backdrop: genuinely transparent background, preserving alpha transparency; no background panel and no checkerboard painted into the image.
+Constraints: original design; simple flat filled shapes with sharp clean edges and balanced negative space; no intricate details, no gradients, no shadows, no glow, no 3D, no photographic mockup, no display board, no slogan, no watermark. Avoid stock music-note, headphone, chip, and lightning-bolt clip art. Produce one finished logo, not a sheet of concepts.
