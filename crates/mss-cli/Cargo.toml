@@ -1,8 +1,8 @@
 [package]
-name = "uvr-audio"
+name = "mss-cli"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
 
 [dependencies]
-uvr-core.workspace = true
+mss-runtime.workspace = true

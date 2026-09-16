@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Run from the uvr-fast repository root.
+# Run from the fast-mss repository root.
 # The script only moves known top-level reference/model directories when they exist.
 # It intentionally does not modify Rust source layout.
 

@@ -1,8 +1,8 @@
 [package]
-name = "uvr-cli"
+name = "mss-models"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
 
 [dependencies]
-uvr-runtime.workspace = true
+mss-core.workspace = true

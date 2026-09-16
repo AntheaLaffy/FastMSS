@@ -1,9 +1,9 @@
-# uvr-fast Architecture Plan
+# fast-mss Architecture Plan
 
 ## Proposed repository layout
 
 ```text
-uvr-fast/
+fast-mss/
 ├── AGENTS.md
 ├── README.md
 ├── Cargo.toml
@@ -80,7 +80,7 @@ OpenVINO and ggml are not simply "enemies"; they are performance baselines and s
 ## Runtime layering
 
 ```text
-                         uvr-fast
+                         fast-mss
                             │
                   model-specific execution plan
                             │

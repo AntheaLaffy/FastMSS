@@ -1,0 +1,11 @@
+[package]
+name = "mss-runtime"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+mss-core.workspace = true
+mss-audio.workspace = true
+mss-kernels.workspace = true
+mss-models.workspace = true

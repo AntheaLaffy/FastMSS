@@ -1,10 +1,10 @@
-# AGENTS.md — uvr-fast Project Contract
+# AGENTS.md — fast-mss Project Contract
 
-This file is the operating contract for any AI or human contributor working on **uvr-fast**.
+This file is the operating contract for any AI or human contributor working on **fast-mss**.
 
 ## 1. Mission
 
-`uvr-fast` is a **special-purpose high-performance inference runtime for a fixed set of music-source-separation models**.
+`fast-mss` is a **special-purpose high-performance inference runtime for a fixed set of music-source-separation models**.
 
 The project is intentionally **not** a general-purpose deep-learning framework.
 
@@ -124,7 +124,7 @@ For each optimized kernel, keep a simple correctness implementation when practic
 
 The primary experimental GPU path is:
 
-`uvr-fast -> CubeCL -> Vulkan/WebGPU or other suitable backend -> GPU`
+`fast-mss -> CubeCL -> Vulkan/WebGPU or other suitable backend -> GPU`
 
 CubeCL is useful because it hides large parts of the platform API while still permitting kernel-level specialization, autotuning and hardware-aware implementation.
 
@@ -146,7 +146,7 @@ Preferred hierarchy:
 
 ### Intel CPU
 
-`uvr-fast` vs `oneDNN/OpenVINO CPU` vs `ggml` where applicable.
+`fast-mss` vs `oneDNN/OpenVINO CPU` vs `ggml` where applicable.
 
 ### Intel iGPU
 

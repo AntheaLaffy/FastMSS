@@ -263,7 +263,7 @@ ZFTurbo/MSST
 3. RoFormer 简洁参考 → `lucidrains/BS-RoFormer`
 4. SCNet → `starrytong/SCNet` + ZFTurbo MSST
 
-因此从 `uvr-fast` 的角度，你其实应该采用一种“三角校验”方式：
+因此从 `fast-mss` 的角度，你其实应该采用一种“三角校验”方式：
 
 ```text
 论文

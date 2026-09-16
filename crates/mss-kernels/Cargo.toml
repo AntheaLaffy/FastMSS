@@ -1,7 +1,8 @@
 [package]
-name = "uvr-core"
+name = "mss-kernels"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
 
 [dependencies]
+mss-core.workspace = true

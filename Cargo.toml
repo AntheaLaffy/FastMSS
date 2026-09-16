@@ -1,12 +1,12 @@
 [workspace]
 resolver = "3"
 members = [
-    "crates/uvr-core",
-    "crates/uvr-audio",
-    "crates/uvr-kernels",
-    "crates/uvr-models",
-    "crates/uvr-runtime",
-    "crates/uvr-cli",
+    "crates/mss-core",
+    "crates/mss-audio",
+    "crates/mss-kernels",
+    "crates/mss-models",
+    "crates/mss-runtime",
+    "crates/mss-cli",
 ]
 
 [workspace.package]
@@ -15,8 +15,8 @@ edition = "2024"
 license = "MIT"
 
 [workspace.dependencies]
-uvr-core = { path = "crates/uvr-core" }
-uvr-audio = { path = "crates/uvr-audio" }
-uvr-kernels = { path = "crates/uvr-kernels" }
-uvr-models = { path = "crates/uvr-models" }
-uvr-runtime = { path = "crates/uvr-runtime" }
+mss-core = { path = "crates/mss-core" }
+mss-audio = { path = "crates/mss-audio" }
+mss-kernels = { path = "crates/mss-kernels" }
+mss-models = { path = "crates/mss-models" }
+mss-runtime = { path = "crates/mss-runtime" }

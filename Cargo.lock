@@ -3,43 +3,43 @@
 version = 4
 
 [[package]]
-name = "uvr-audio"
+name = "mss-audio"
 version = "0.1.0"
 dependencies = [
- "uvr-core",
+ "mss-core",
 ]
 
 [[package]]
-name = "uvr-cli"
+name = "mss-cli"
 version = "0.1.0"
 dependencies = [
- "uvr-runtime",
+ "mss-runtime",
 ]
 
 [[package]]
-name = "uvr-core"
+name = "mss-core"
 version = "0.1.0"
 
 [[package]]
-name = "uvr-kernels"
+name = "mss-kernels"
 version = "0.1.0"
 dependencies = [
- "uvr-core",
+ "mss-core",
 ]
 
 [[package]]
-name = "uvr-models"
+name = "mss-models"
 version = "0.1.0"
 dependencies = [
- "uvr-core",
+ "mss-core",
 ]
 
 [[package]]
-name = "uvr-runtime"
+name = "mss-runtime"
 version = "0.1.0"
 dependencies = [
- "uvr-audio",
- "uvr-core",
- "uvr-kernels",
- "uvr-models",
+ "mss-audio",
+ "mss-core",
+ "mss-kernels",
+ "mss-models",
 ]

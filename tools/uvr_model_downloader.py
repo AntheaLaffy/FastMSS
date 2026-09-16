@@ -2,7 +2,7 @@
 """
 uvr_model_downloader.py
 
-Small dependency-light downloader for the exact UVR/RoFormer models used by uvr-fast.
+Small dependency-light downloader for the exact UVR/RoFormer models used by fast-mss.
 
 Features
 --------
@@ -65,7 +65,7 @@ except ImportError as exc:
     ) from exc
 
 
-APP_NAME = "uvr-fast-model-downloader"
+APP_NAME = "fast-mss-model-downloader"
 DEFAULT_TIMEOUT = 30
 CHUNK_SIZE = 1024 * 1024
 USER_AGENT = f"{APP_NAME}/1.0"
@@ -73,7 +73,7 @@ USER_AGENT = f"{APP_NAME}/1.0"
 
 def config_path() -> Path:
     root = Path(os.environ.get("XDG_CONFIG_HOME", Path.home() / ".config"))
-    return root / "uvr-fast" / "model-downloader.json"
+    return root / "fast-mss" / "model-downloader.json"
 
 
 @dataclass(frozen=True)
@@ -729,7 +729,7 @@ def cmd_fetch(args: argparse.Namespace) -> int:
 
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
-        description="uvr-fast 模型下载器：GitHub / Hugging Face / ModelScope + 代理管理 + 断点续传"
+        description="fast-mss 模型下载器：GitHub / Hugging Face / ModelScope + 代理管理 + 断点续传"
     )
     sub = p.add_subparsers(dest="command", required=True)
 
